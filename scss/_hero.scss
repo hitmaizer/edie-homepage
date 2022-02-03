@@ -1,0 +1,93 @@
+.hero__introtext {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $blue;
+    place-self: flex-start;
+    margin-left: 277px;
+}
+
+.hero__title {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    color: $dark-gray;
+    place-self: flex-start;
+    margin-left: 277px;
+    max-width: 543px;
+}
+
+.hero__image {
+    border-radius: 18px;
+}
+
+.under--img{
+    max-width: 366px;
+}
+
+.hero__text {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: $dark-gray;
+    max-width: 366px;
+    place-self: flex-start;
+    margin-left: 277px;
+}
+
+.hero__input--label {
+    align-self: flex-start;
+    margin-left: 277px;
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $lighter-gray;
+}
+
+.input__container {
+    align-self: flex-start;
+    margin-left: 277px;
+    position: relative;
+    
+}
+
+.input {
+    border: none;
+    
+    background-color: $off-white;
+    color: $lightest-gray;
+    height: 57px;
+    text-indent: 15px;
+    border-radius: 12px;
+    width: 350px;
+    &::placeholder {
+        font-family: $poppins;
+    }
+}
+
+.input__btn {
+    position: absolute;
+    border: none;
+    background-color: $blue;
+    color: $off-white;
+    font-family: $poppins;
+    border-radius: 12px;
+    padding: 12px 24px;
+    right: 8px;
+    bottom: 0;
+    left: 1;
+    
+    transform: translateY(-15%);
+    
+    
+    cursor: pointer;
+
+}
