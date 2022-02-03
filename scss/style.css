@@ -191,3 +191,57 @@ a {
           transform: translateY(-15%);
   cursor: pointer;
 }
+
+.services__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: #333333;
+  max-width: 346px;
+}
+
+.icon__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.icon {
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+.icon--blue {
+  background-color: #2D9CDB;
+  padding: 16px;
+}
+
+.icon--green {
+  background-color: #27AE60;
+  padding: 16px;
+}
+
+.icon--red {
+  background-color: #EB5757;
+  padding: 16px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
