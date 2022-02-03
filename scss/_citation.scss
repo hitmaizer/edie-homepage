@@ -1,7 +1,11 @@
 .citation__wrapper {
-    place-items: flex-start;
     gap: 16px;
 
+}
+
+.citation__container {
+    place-items: flex-start;
+    gap: 48px;
 }
 
 .card__info {
