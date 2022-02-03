@@ -1,3 +1,8 @@
+.citation__wrapper {
+    place-items: flex-start;
+
+}
+
 .citation__text {
     font-family: $poppins;
     color: $dark-gray;
@@ -6,6 +11,7 @@
     font-size: 36px;
     line-height: 54px;
     max-width: 937px;
+    
 }
 
 .citation__img {
@@ -13,3 +19,16 @@
     border-radius: 12px;
 }
 
+.card__name {
+    font-family: $poppins;
+    color: $dark-gray;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.card__position {
+    font-family: $poppins;
+    color: $lighter-gray;
+}
