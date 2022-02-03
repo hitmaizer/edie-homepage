@@ -1,0 +1,38 @@
+.navbar {
+    padding: 50px 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar__logo {
+    place-self: flex-start;
+    font-family: $heebo;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+    color: $dark-gray;
+}
+
+.navbar__list {
+    place-self: flex-end;
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    list-style-type: none;
+    color: $dark-gray;
+
+}
+
+.navbar__list--item {
+    color: $dark-gray;
+    padding: 10px;
+    a{
+        text-decoration: none;
+    }
+}
