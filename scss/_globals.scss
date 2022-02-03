@@ -6,7 +6,7 @@
 .flex-col {
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
     align-items: center;
 }
 
@@ -19,6 +19,7 @@
 
 section {
     padding: 64px;
+    
 }
 
 a { color: inherit; } 

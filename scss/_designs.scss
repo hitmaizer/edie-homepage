@@ -16,6 +16,10 @@
     gap: 32px;
 }
 
+.design__card {
+    cursor: pointer;
+}
+
 .card__img {
     object-fit: cover;
     width: 100%;
@@ -50,6 +54,7 @@
 .seemore__btn {
     place-self: flex-end;
     margin-right: 100px;
+    
 } 
 
 .design__btn {
@@ -62,6 +67,7 @@
     font-size: 24px;
     line-height: 36px;
     text-align: center;
+    cursor: pointer;
     
     
 }
