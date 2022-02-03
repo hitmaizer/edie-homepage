@@ -1,6 +1,6 @@
 .design__title {
     place-self: flex-start;
-    
+    max-width: 448px;
     font-family: $poppins;
     font-style: normal;
     font-weight: 500;
@@ -14,6 +14,7 @@
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     gap: 32px;
+    margin-top: 32px;
 }
 
 .design__card {

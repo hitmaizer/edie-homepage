@@ -1,3 +1,7 @@
+.services__wrapper {
+    gap: 40px;
+}
+
 .services__title {
     font-family: $poppins;
     font-style: normal;
@@ -65,6 +69,7 @@
     font-size: 24px;
     line-height: 36px;
     color: $dark-gray;
+    margin-top: 32px;
 }
 
 .card__text {
@@ -75,6 +80,7 @@
     line-height: 24px;
     color: $light-gray;
     max-width: 273px;
+    margin-top: 24px;
 }
 
 .card__btn {
@@ -85,6 +91,7 @@
     font-family: $poppins;
     color: $lighter-gray;
     cursor: pointer;
+    margin-top: 32px;
 }
 
 

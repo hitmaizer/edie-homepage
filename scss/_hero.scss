@@ -1,3 +1,12 @@
+.hero__wrapper {
+    gap: 40px;
+    place-items: flex-start;
+}
+
+.hero__intro {
+    place-self: flex-start;
+}
+
 .hero__introtext {
     font-family: $poppins;
     font-style: normal;
