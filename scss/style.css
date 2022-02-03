@@ -36,3 +36,54 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+a {
+  color: inherit;
+}
+
+.navbar {
+  padding: 50px 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__logo {
+  place-self: flex-start;
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 53px;
+  color: #333333;
+}
+
+.navbar__list {
+  place-self: flex-end;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  list-style-type: none;
+  color: #333333;
+}
+
+.navbar__list--item {
+  color: #333333;
+  padding: 10px;
+}
+
+.navbar__list--item a {
+  text-decoration: none;
+}
