@@ -135,7 +135,6 @@ a {
 .hero__input--label {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 277px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -284,6 +283,7 @@ a {
   border-radius: 12px;
   font-family: "Poppins", sans-serif;
   color: #828282;
+  cursor: pointer;
 }
 
 .material-icons.md-18 {
@@ -501,13 +501,19 @@ a {
   color: #F2F2F2;
   padding: 64px;
   place-items: flex-start;
-  justify-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 385px;
 }
 
 .footer__content {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
 }
 
@@ -542,6 +548,16 @@ a {
   -ms-flex-line-pack: center;
       align-content: center;
   justify-items: center;
+  cursor: pointer;
+}
+
+.footer__input--label {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 8px;
 }
 
 .footer__sign {

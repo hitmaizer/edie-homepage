@@ -3,12 +3,14 @@
     color: $off-white;
     padding: 64px;
     place-items: flex-start;
-    justify-items: space-between;
+    justify-content: space-between;
+    height: 385px;
     
 }
 
 .footer__content {
     justify-content: space-evenly;
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -43,6 +45,18 @@
     gap: 8px;
     align-content: center;
     justify-items: center;
+    cursor: pointer;
+}
+
+
+.footer__input--label {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 8px;
+    
 }
 
 .footer__sign {
