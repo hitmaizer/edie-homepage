@@ -1,0 +1,49 @@
+.services__title {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: $dark-gray;
+    max-width: 346px;
+}
+
+.icon__container {
+    display: flex;
+    align-content: center;
+    
+
+    
+    
+}
+
+.icon {
+    border-radius: 16px;
+    color: $white;
+    
+    
+    
+}
+
+.icon--blue {
+    background-color: $blue;
+    padding: 16px;
+    
+}
+
+.icon--green {
+    background-color: $green;
+    padding: 16px;
+    
+}
+
+.icon--red {
+    background-color: $red;
+    padding: 16px;
+    
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
