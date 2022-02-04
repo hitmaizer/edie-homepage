@@ -1,6 +1,18 @@
 .team__wrapper {
     gap: 150px;
+    @include respond-below(sm) {
+      flex-direction: column;
+      gap: rem(32px);
+      margin-top: rem(100px);
+    }
 }
+
+.team__left {
+    @include respond-below(sm) {
+      place-self: flex-start;
+    }
+}
+
 
 .team__subtitle {
     font-family: $poppins;
