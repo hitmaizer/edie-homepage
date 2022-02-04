@@ -3,6 +3,7 @@
     place-items: flex-start;
     @include respond-below(sm) {
       place-items: center;
+      gap: rem(16px);
     }
     
 }
@@ -11,8 +12,10 @@
     place-self: flex-start;
     width: 1075px;
     margin: auto;
-
-
+    @include respond-below(sm) {
+      width: auto;
+      margin: 0;
+    }
     
 }
 
@@ -54,9 +57,10 @@
     object-fit: cover;
     width: 100%;
     max-height: 100%;
-
     @include respond-below(xs) {
       max-width: rem(348px);
+      height: rem(154px);
+      margin: 0;
     }
 }
 
@@ -64,10 +68,18 @@
     width: 1075px;
     margin: auto;
     gap: 40px;
+    @include respond-below(sm) {
+      width: auto;
+      gap: rem(16px);
+      margin: 0;
+    }
 }
 
 .under--img{
     max-width: 366px;
+    @include respond-below(sm) {
+        max-width: rem(272px);
+    }
 }
 
 .hero__text {
@@ -79,6 +91,11 @@
     color: $light-gray;
     max-width: 366px;
     place-self: flex-start;
+    @include respond-below(sm) {
+        font-size: rem(12px);
+        line-height: rem(18px);
+        max-width: rem(275px);
+    }
     
 }
 
