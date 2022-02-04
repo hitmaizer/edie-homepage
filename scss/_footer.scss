@@ -25,6 +25,10 @@
     place-self: flex-start;
     
     padding: 0;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .list__items {
@@ -68,4 +72,5 @@
     line-height: 17px;
     text-align: center;
     place-self: center;
+    margin-top: 120px;
 }
