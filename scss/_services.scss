@@ -10,7 +10,7 @@
 .services__intro {
     width: 1074px;
     @include respond-below(sm) {
-      width: 100%;
+        width: rem(337px);
     }
     
 }
@@ -27,6 +27,8 @@
     @include respond-below(sm) {
         font-size: rem(24px);
         line-height: rem(36px);
+        
+        place-self: center;
     }
     
 
