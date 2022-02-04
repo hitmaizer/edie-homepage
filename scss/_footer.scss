@@ -5,6 +5,12 @@
     place-items: flex-start;
     justify-content: space-between;
     height: 385px;
+    width: 100%;
+    @include respond-below(sm) {
+      padding: rem(16px);
+      height: auto;
+      
+    }
     
 }
 
@@ -12,6 +18,12 @@
     justify-content: space-evenly;
     align-items: flex-start;
     width: 100%;
+    @include respond-below(sm) {
+      flex-direction: column;
+      gap: 48px;
+      margin-top: 40px;
+
+    }
 }
 
 .footer__list {
@@ -43,6 +55,11 @@
 
 .socials__title {
     place-self: flex-start;
+    font-family: $heebo;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
 }
 
 .socials__icons {
