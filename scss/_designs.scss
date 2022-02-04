@@ -11,6 +11,10 @@
     font-size: 36px;
     line-height: 54px;
     color: $dark-gray;
+    @include respond-below(sm) {
+        font-size: rem(24px);
+        line-height: rem(36px);
+    }
 }
 
 .design__grid {
@@ -19,6 +23,10 @@
     grid-template-rows: repeat(2, auto);
     gap: 32px;
     margin-top: 32px;
+
+    @include respond-below(sm) {
+      grid-template-columns: repeat(1, auto);
+    }
 }
 
 .design__card {
@@ -32,6 +40,10 @@
     height: 545px;
     border-radius: 24px;
 
+    @include respond-below(sm) {
+      height: rem(405px);
+    }
+
 }
 
 .card__category {
@@ -42,6 +54,11 @@
     line-height: 21px;
     color: $lighter-gray;
     margin-top: 16px;
+
+    @include respond-below(sm) {
+        font-size: rem(12px);
+        line-height: rem(18px);
+    }
 }
 
 .card__title--design {
@@ -52,14 +69,25 @@
     font-size: 24px;
     line-height: 36px;
     margin-top: 8px;
+    @include respond-below(sm) {
+        font-size: rem(18px);
+        line-height: rem(27px);
+    }
 }
 
 .design__card--first {
     margin-top: 100px;
+    @include respond-below(sm) {
+      margin-top: 0;
+    }
 }
 
 .seemore__btn {
     place-self: flex-end;
+    @include respond-below(sm) {
+      place-self: flex-start;
+      margin-top: 32px;
+    }
     
     
 } 
