@@ -1,6 +1,9 @@
 .hero__wrapper {
     gap: 40px;
     place-items: flex-start;
+    @include respond-below(sm) {
+      place-items: center;
+    }
     
 }
 
@@ -8,6 +11,7 @@
     place-self: flex-start;
     width: 1075px;
     margin: auto;
+
 
     
 }
@@ -20,6 +24,10 @@
     line-height: 27px;
     color: $blue;
     place-self: flex-start;
+    @include respond-below(sm) {
+        font-size: rem(12px);
+        line-height: rem(18px);
+    }
     
 }
 
@@ -31,14 +39,25 @@
     line-height: 72px;
     color: $dark-gray;
     place-self: flex-start;
-    
     max-width: 543px;
+    @include respond-below(sm) {
+        font-size: rem(24px);
+        line-height: rem(36px);
+        max-width: rem(272px);
+    }
 }
 
 .hero__image {
     border-radius: 18px;
     max-width: 1332px;
     place-self: center;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+
+    @include respond-below(xs) {
+      max-width: rem(348px);
+    }
 }
 
 .hero__bottom {
