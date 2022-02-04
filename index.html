@@ -13,33 +13,37 @@
     <nav class="navbar">
         <h1 class="navbar__logo">Edie</h1>
         <ul class="navbar__list flex-row">
-            <li class="navbar__list--item"><a href="#">Home</a></li>
-            <li class="navbar__list--item"><a href="#">Services</a></li>
-            <li class="navbar__list--item"><a href="#">Our Works</a></li>
-            <li class="navbar__list--item"><a href="#">Clients</a></li>
-            <li class="navbar__list--item"><a href="#">Contact</a></li>
+            <li class="navbar__list--item"><a href="#hero">Home</a></li>
+            <li class="navbar__list--item"><a href="#services">Services</a></li>
+            <li class="navbar__list--item"><a href="#designs">Our Works</a></li>
+            <li class="navbar__list--item"><a href="#clients">Clients</a></li>
+            <li class="navbar__list--item"><a href="#footer">Contact</a></li>
         </ul>
     </nav>
-    <section class="hero__wrapper flex-col">
+    <section id="hero" class="hero__wrapper flex-col">
         <div class="hero__intro">
             <h6 class="hero__introtext">Unhappy with your website?</h6>
             <h1 class="hero__title">We create beautiful and fast web services</h1>
         </div>
         <img src="./images/heroImage.jpg" alt="" class="hero__image">
-        <h1 class="hero__title under--img">Story, emotion and purpose</h1>
-        <p class="hero__text">We help transform your ideas into real world 
-            applications that will outperform your toughest competition and 
-            help you achieve your strategic goals in short period of time.</p>
-        <div class="hero__input">
-            <h6 class="hero__input--label">Want us to contact you?</h6>
-            <div class="input__container">
-                <input class="input" type="email" placeholder="Email">
-                <button class="input__btn">Join</button>
+        <div class="hero__bottom flex-col">
+            <h1 class="hero__title under--img">Story, emotion and purpose</h1>
+            <p class="hero__text">We help transform your ideas into real world 
+                applications that will outperform your toughest competition and 
+                help you achieve your strategic goals in short period of time.</p>
+            <div class="hero__input">
+                <h6 class="hero__input--label">Want us to contact you?</h6>
+                <div class="input__container">
+                    <input class="input" type="email" placeholder="Email">
+                    <button class="input__btn">Join</button>
+                </div>
             </div>
         </div>
     </section>
-    <section class="services__wrapper flex-col">
-        <h1 class="services__title">We offer high demand services</h1>
+    <section id="services" class="services__wrapper flex-col">
+        <div class="services__intro">
+            <h1 class="services__title">We offer high demand services</h1>
+        </div>
         <div class="services__cards flex-row">
             <div class="card__wrapper">
                 <div class="icon__container">
@@ -69,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="design__wrapper">
+    <section id="designs" class="design__wrapper">
         <div class="design__container flex-col">
             <h1 class="design__title">Good design means good business</h1>
             <div class="design__grid">
@@ -100,7 +104,7 @@
             </div>
         </div>
     </section>
-    <section class="team__wrapper flex-row">
+    <section id="team" class="team__wrapper flex-row">
         <div class="team__left">
             <h5 class="team__subtitle">Meet the team</h5>
             <h1 class="team__title">We are chilled and a laidback team</h1>
@@ -114,7 +118,7 @@
             </div>
         </div>
     </section>
-    <section class="citation__wrapper">
+    <section id="clients" class="citation__wrapper">
         <div class="citation__container flex-col">
             <h1 class="citation__text">“Fast and outstanding results. 
                 Edie understands their customers needs. 
@@ -128,14 +132,14 @@
             </div>  
         </div>  
     </section>
-    <footer class="footer__wrapper flex-col">
+    <footer id="contacts" class="footer__wrapper flex-col">
         <div class="footer__content flex-row">
             <ul class="footer__list flex-col">
-                <li class="list__items">Home</li>
-                <li class="list__items">Services</li>
-                <li class="list__items">Our Works</li>
-                <li class="list__items">Clients</li>
-                <li class="list__items">Contact</li>
+                <li class="list__items"><a href="#hero">Home</a></li>
+                <li class="list__items"><a href="#services">Services</a></li>
+                <li class="list__items"><a href="#designs">Our Works</a></li>
+                <li class="list__items"><a href="#clients">Clients</a></li>
+                <li class="list__items"><a href="#footer">Contact</a></li>
             </ul>
             <div class="footer__socials flex-col">
                 <h1 class="socials__title">Edie</h1>
