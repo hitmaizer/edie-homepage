@@ -4,6 +4,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @include respond-below(sm) {
+      padding: rem(16px) rem(32px);
+    }
     
 }
 
@@ -26,6 +29,9 @@
     line-height: 36px;
     list-style-type: none;
     color: $dark-gray;
+    @include respond-below(sm) {
+      display: none;
+    }
 
 }
 
