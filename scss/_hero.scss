@@ -13,7 +13,8 @@
     width: 1075px;
     margin: auto;
     @include respond-below(sm) {
-      width: auto;
+        place-self: center;
+      width: rem(348px);
       margin: 0;
     }
     
