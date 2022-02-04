@@ -1,6 +1,9 @@
 .services__wrapper {
     gap: 48px;
     margin: auto;
+    @include respond-below(sm) {
+      gap: 16px;
+    }
     
 }
 
