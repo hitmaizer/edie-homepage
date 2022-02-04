@@ -1,10 +1,15 @@
 .hero__wrapper {
     gap: 40px;
     place-items: flex-start;
+    
 }
 
 .hero__intro {
     place-self: flex-start;
+    width: 1075px;
+    margin: auto;
+
+    
 }
 
 .hero__introtext {
@@ -32,6 +37,14 @@
 
 .hero__image {
     border-radius: 18px;
+    max-width: 1332px;
+    place-self: center;
+}
+
+.hero__bottom {
+    width: 1075px;
+    margin: auto;
+    gap: 40px;
 }
 
 .under--img{
@@ -44,10 +57,14 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
-    color: $dark-gray;
+    color: $light-gray;
     max-width: 366px;
     place-self: flex-start;
     
+}
+
+.hero__input {
+    place-self: flex-start;
 }
 
 .hero__input--label {
@@ -62,14 +79,14 @@
 
 .input__container {
     align-self: flex-start;
-    
+    width: 350px;
     position: relative;
     
 }
 
 .input {
     border: none;
-    
+    margin-top: 4px;
     background-color: $off-white;
     color: $lightest-gray;
     height: 57px;
@@ -78,6 +95,10 @@
     width: 350px;
     &::placeholder {
         font-family: $poppins;
+    }
+
+    &:focus {
+        color: $dark-gray;
     }
 }
 
