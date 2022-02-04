@@ -27,6 +27,9 @@ section {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    @include respond-below(sm) {
+      padding: rem(16px);
+    }
 }
 
 a { color: inherit; } 
