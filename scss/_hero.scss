@@ -101,6 +101,9 @@
 
 .hero__input {
     place-self: flex-start;
+    @include respond-below(sm) {
+      margin-top: rem(32px);
+    }
 }
 
 .hero__input--label {

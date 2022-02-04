@@ -67,6 +67,28 @@ a {
   color: inherit;
 }
 
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+@media (max-width: 767px) {
+  .material-icons.md-36 {
+    font-size: 1.5rem;
+  }
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
 .navbar {
   padding: 50px 56px;
   display: -webkit-box;
@@ -82,12 +104,53 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .navbar {
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #2D9CDB;
   }
+}
+
+#hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  color: #333333;
+  right: 5%;
+  top: 50%;
+  -webkit-transform: translate(-5%, -50%);
+          transform: translate(-5%, -50%);
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  #hamburger {
+    display: block;
+    color: #ffffff;
+  }
+}
+
+.hamburger__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  clip-path: circle(100px at 100% -10%);
+  -webkit-clip-path: circle(100px at 100% -10%);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .navbar__logo {
@@ -100,8 +163,14 @@ a {
   color: #333333;
 }
 
-.navbar__list {
-  place-self: flex-end;
+@media (max-width: 991px) {
+  .navbar__logo {
+    color: #ffffff;
+  }
+}
+
+.navbar__list--web {
+  place-self: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -111,7 +180,24 @@ a {
   color: #333333;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+  .navbar__list--web {
+    display: none;
+  }
+}
+
+.navbar__list {
+  place-self: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  list-style-type: none;
+  color: #333333;
+}
+
+@media (max-width: 991px) {
   .navbar__list {
     display: none;
   }
@@ -124,6 +210,34 @@ a {
 
 .navbar__list--item a {
   text-decoration: none;
+}
+
+.open {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2D9CDB;
+  clip-path: circle(1800px at 90% -10%);
+  -webkit-clip-path: circle(1800px at 90% -10%);
+}
+
+.open .navbar__list {
+  display: block;
+}
+
+.open .navbar__list .navbar__list--item {
+  color: #ffffff;
 }
 
 .hero__wrapper {
@@ -250,6 +364,12 @@ a {
 
 .hero__input {
   place-self: flex-start;
+}
+
+@media (max-width: 767px) {
+  .hero__input {
+    margin-top: 2rem;
+  }
 }
 
 .hero__input--label {
@@ -454,22 +574,6 @@ a {
   margin-top: 32px;
 }
 
-.material-icons.md-18 {
-  font-size: 18px;
-}
-
-.material-icons.md-24 {
-  font-size: 24px;
-}
-
-.material-icons.md-36 {
-  font-size: 36px;
-}
-
-.material-icons.md-48 {
-  font-size: 48px;
-}
-
 @media (max-width: 767px) {
   .design__wrapper {
     margin-top: 6.25rem;
@@ -604,6 +708,13 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .design__btn {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+}
+
 .arrow--icon {
   color: #2D9CDB;
 }
@@ -648,6 +759,12 @@ a {
   max-width: 280px;
 }
 
+@media (max-width: 767px) {
+  .team__title {
+    margin-top: 0.5rem;
+  }
+}
+
 .team__text {
   font-family: "Poppins", sans-serif;
   color: #4F4F4F;
@@ -656,6 +773,12 @@ a {
   font-size: 16px;
   line-height: 24px;
   max-width: 273px;
+}
+
+@media (max-width: 767px) {
+  .team__text {
+    margin-top: 1rem;
+  }
 }
 
 .team__photos {
@@ -717,6 +840,7 @@ a {
   place-items: flex-start;
   gap: 48px;
   margin: auto;
+  margin-bottom: 120px;
 }
 
 .card__info {
@@ -780,6 +904,7 @@ a {
   .footer__wrapper {
     padding: 1rem;
     height: auto;
+    margin-top: 6.25rem;
   }
 }
 
