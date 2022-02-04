@@ -1,5 +1,8 @@
 .citation__wrapper {
     gap: 16px;
+    @include respond-below(sm) {
+      margin-top: rem(100px);
+    }
 
 }
 
@@ -27,6 +30,10 @@
     font-size: 36px;
     line-height: 54px;
     max-width: 937px;
+    @include respond-below(sm) {
+        font-size: rem(24px);
+        line-height: rem(36px);
+    }
     
 }
 
