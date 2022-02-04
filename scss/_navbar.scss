@@ -4,10 +4,40 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    @include respond-below(sm) {
-      padding: rem(16px) rem(32px);
+    position: relative;
+    @include respond-below(md) {
+      padding: rem(8px) rem(16px);
+      background-color: $blue;
+      
+
     }
     
+}
+
+#hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    color: $dark-gray;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    @include respond-below(md) {
+      display: block;
+      color: $white;
+    }
+
+}
+
+.hamburger__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(100px at 100% -10%);
+      -webkit-clip-path: circle(100px at 100% -10%);
+      transition: all 1s ease-out;
 }
 
 .navbar__logo {
@@ -18,10 +48,14 @@
     font-size: 36px;
     line-height: 53px;
     color: $dark-gray;
+    @include respond-below(md) {
+      color: $white;
+    }
 }
 
-.navbar__list {
-    place-self: flex-end;
+
+.navbar__list--web { 
+    place-self: center;
     font-family: $poppins;
     font-style: normal;
     font-weight: 500;
@@ -29,8 +63,23 @@
     line-height: 36px;
     list-style-type: none;
     color: $dark-gray;
-    @include respond-below(sm) {
-      display: none;
+    @include respond-below(md) {
+        display: none;
+    }
+}
+
+
+.navbar__list {
+    place-self: center;
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    list-style-type: none;
+    color: $dark-gray;
+    @include respond-below(md) {
+        display: none;
     }
 
 }
@@ -40,5 +89,28 @@
     padding: 10px;
     a{
         text-decoration: none;
+    }
+}
+
+
+
+.open {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: $blue;
+    clip-path: circle(1800px at 90% -10%);
+    -webkit-clip-path: circle(1800px at 90% -10%);
+
+  
+    .navbar__list {
+        display: block;
+        .navbar__list--item {
+            color: $white;
+        }
     }
 }
