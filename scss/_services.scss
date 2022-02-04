@@ -1,5 +1,11 @@
 .services__wrapper {
     gap: 40px;
+    margin: auto;
+}
+
+.services__intro {
+    width: 1074px;
+    
 }
 
 .services__title {
@@ -9,8 +15,10 @@
     font-size: 36px;
     line-height: 54px;
     color: $dark-gray;
-    max-width: 346px;
+    max-width: 15ch;
     place-self: flex-start;
+    
+
     
 }
 
@@ -44,6 +52,8 @@
 
 .services__cards {
     gap: 32px;
+    place-self: flex-start;
+    margin: auto;
 }
 
 .card__wrapper {
