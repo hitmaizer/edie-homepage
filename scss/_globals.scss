@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
