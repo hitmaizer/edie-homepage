@@ -110,6 +110,10 @@
     line-height: 36px;
     text-align: center;
     cursor: pointer;
+    @include respond-below(sm) {
+        font-size: rem(18px);
+        line-height: rem(27px);
+    }
     
     
 }
