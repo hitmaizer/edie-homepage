@@ -507,7 +507,7 @@ a {
   margin: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .services__wrapper {
     gap: 16px;
   }
@@ -517,7 +517,7 @@ a {
   width: 1074px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .services__intro {
     width: 21.0625rem;
   }
@@ -534,11 +534,11 @@ a {
   place-self: flex-start;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .services__title {
     font-size: 1.5rem;
     line-height: 2.25rem;
-    place-self: center;
+    place-self: flex-start;
   }
 }
 
@@ -576,7 +576,7 @@ a {
   margin: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .services__cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -1,7 +1,7 @@
 .services__wrapper {
     gap: 48px;
     margin: auto;
-    @include respond-below(sm) {
+    @include respond-below(md) {
       gap: 16px;
     }
     
@@ -9,7 +9,7 @@
 
 .services__intro {
     width: 1074px;
-    @include respond-below(sm) {
+    @include respond-below(md) {
         width: rem(337px);
     }
     
@@ -24,11 +24,11 @@
     color: $dark-gray;
     max-width: 15ch;
     place-self: flex-start;
-    @include respond-below(sm) {
+    @include respond-below(md) {
         font-size: rem(24px);
         line-height: rem(36px);
         
-        place-self: center;
+        place-self: flex-start;
     }
     
 
@@ -67,7 +67,7 @@
     gap: 32px;
     place-self: flex-start;
     margin: auto;
-    @include respond-below(sm) {
+    @include respond-below(md) {
         flex-direction: column;
       }
 }
